@@ -48,7 +48,7 @@ public class ProductServiceController {
    @GetMapping(value = "/getbyname/products/{name}")
    public ResponseEntity<Object> findByProductName(@PathVariable
    String name) {
-      return new ResponseEntity<Object>(productService.findByProductName(name), HttpStatus.OK);
+      return new ResponseEntity<Object>(productService.findByProductName(name), HttpStatus.UNAUTHORIZED);
    }
 
 }
